@@ -1,14 +1,18 @@
-# Pull in the layer of the base image: alpine:3.10.3
 FROM golang:1.11-alpine
 
-LABEL maintainer='marc.kurz@fh-hagenberg.at'
+# Set maintainer label: maintainer=[YOUR-EMAIL]
 
-WORKDIR /src
 
-COPY *.go go.* ./
+# Set working directory: `/src`
 
-RUN CGO_ENABLED=0 go build -o /usr/myappmain
 
-EXPOSE 8010
+# Copy local file `main.go` to the working directory
 
-CMD ["/usr/myappmain"]
+
+# List items in the working directory (ls)
+
+# Build the GO app as myapp binary and move it to /usr/
+
+#Expose port 8888
+
+# Run the service myapp when a container of this image is launched
