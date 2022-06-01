@@ -4,10 +4,10 @@ FROM golang:1.11-alpine
 LABEL maintainer='bachl.christoph@gmx.at'
 
 # Set working directory: `/src`
-RUN mkdir /src
+WORKDIR /src
 
 # Copy local file `main.go` to the working directory
-COPY main.go /src/main.go
+COPY main.go .
 
 # List items in the working directory (ls)
 RUN [ "ls" ]
