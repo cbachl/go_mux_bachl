@@ -36,7 +36,7 @@ jobs:
         run: docker build -t cbachl/demo:latest .
       
       - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@main
+        uses: aquasecurity/trivy-action@master
         with:
           image-ref: 'cbachl/demo:latest'
           format: 'table'
