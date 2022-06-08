@@ -1,5 +1,5 @@
 # Exercise 04 CD
 
 ![Test, Build and Pushed Status](https://github.com/cbachl/go_mux_bachl/actions/workflows/github-actions.yml/badge.svg)
-![Test, Ex 04](https://github.com/cbachl/go_mux_bachl/runs/6791131972?check_suite_focus=true/badge.svg)
+
 
